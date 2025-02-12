@@ -24,7 +24,7 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 2. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pubmed-papers.git
+git clone https://github.com/moseskiran006/pubmed-papers.git
 cd pubmed-papers
 ```
 
@@ -37,20 +37,22 @@ poetry install
 
 The package provides a command-line tool `get-papers-list`:
 
-```bash
-# Basic usage
-poetry run get-papers-list "cancer therapy"
-
-# Save results to file
-poetry run get-papers-list "cancer therapy" -f results.csv
-
-# Enable debug logging
-poetry run get-papers-list "cancer therapy" -d
-
-# Show help
-poetry run get-papers-list --help
+# Basic search
 ```
-
+python -m pubmed_papers.cli "cancer therapy"
+```
+# Save to CSV file
+```
+python -m pubmed_papers.cli "cancer therapy" -f results.csv
+```
+# Debug mode
+```
+python -m pubmed_papers.cli "cancer therapy" -d
+```
+# Complex search
+```
+python -m pubmed_papers.cli "cancer AND therapy AND (pharma OR biotech)"
+```
 ## Code Organization
 
 The package is organized as follows:
