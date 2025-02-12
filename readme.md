@@ -1,3 +1,6 @@
+### ScholarQuery – A smart querying tool for research.
+
+
 # PubMed Papers
 
 A Python package to fetch research papers from PubMed and identify papers with authors affiliated with pharmaceutical or biotech companies.
