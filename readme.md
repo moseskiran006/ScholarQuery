@@ -37,19 +37,19 @@ poetry install
 
 The package provides a command-line tool `get-papers-list`:
 
-# Basic search
+### Basic search
 ```
 python -m pubmed_papers.cli "cancer therapy"
 ```
-# Save to CSV file
+### Save to CSV file
 ```
 python -m pubmed_papers.cli "cancer therapy" -f results.csv
 ```
-# Debug mode
+### Debug mode
 ```
 python -m pubmed_papers.cli "cancer therapy" -d
 ```
-# Complex search
+### Complex search
 ```
 python -m pubmed_papers.cli "cancer AND therapy AND (pharma OR biotech)"
 ```
